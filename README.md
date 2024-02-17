@@ -42,7 +42,7 @@ koii balance
 ```
 **-create new wallet**
 ```
-koii-keygen new -o /your/path/of/id.json
+koii-keygen new -o /root/.config/koii/id.json
 ```
 **-install docker**
 ```
