@@ -92,7 +92,7 @@ sudo apt install npm
 
 **-Run this command**
 ```
-cd root
+cd
 npx @_koii/create-task-cli@latest
 ```
 
