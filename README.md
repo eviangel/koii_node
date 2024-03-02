@@ -98,7 +98,7 @@ npx @_koii/create-task-cli@latest
 
 **-then choose claim rewards for this example i will use the free token Task**
 
-**Task id:** 6GbpHRK3duDbo3dCEFXuJ2KD5Hg6Yo4A9LyHozeE7rjN
+**Task id:** 5CNWuMPNfzARFyxEcDwGCXgsxZHasNQjP6vQSFxeEyET
 
 **stakePotAccount:** FnQm11NXJxPSjza3fuhuQ6Cu4fKNqdaPkVSRyLSWf14d
 
