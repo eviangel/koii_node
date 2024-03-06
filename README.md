@@ -98,9 +98,9 @@ npx @_koii/create-task-cli@latest
 
 **-then choose claim rewards for this example i will use the free token Task**
 
-**Task id:** 5CNWuMPNfzARFyxEcDwGCXgsxZHasNQjP6vQSFxeEyET
+**Task id:** 4ipWnABntsvJPsAkwyMF7Re4z39ZUMs2S2dfEm5aa2is
 
-**stakePotAccount:** FnQm11NXJxPSjza3fuhuQ6Cu4fKNqdaPkVSRyLSWf14d
+**stakePotAccount:** stakepotaccountsP9iQfvCxMeS7RNNgrSVTDyxJRPQ
 
 **address that the funds will be transfered to:** your_wallet_address
 
