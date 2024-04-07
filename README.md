@@ -98,13 +98,79 @@ npx @_koii/create-task-cli@latest
 
 **-then choose claim rewards for this example i will use the free token Task**
 
-**Task id:** 4ipWnABntsvJPsAkwyMF7Re4z39ZUMs2S2dfEm5aa2is
+**Task id:** GbumTdsj7hcPZKGbExTFLxQ4Cj8FeQFvH7NZWCahYows
 
-**stakePotAccount:** stakepotaccountsP9iQfvCxMeS7RNNgrSVTDyxJRPQ
+**stakePotAccount:** stakepotaccount8BKM1uyj4QRi6TvbwhJA6JGMnBsL
 
 **address that the funds will be transfered to:** your_wallet_address
 
 **path to claimer wallet:** VPS-task/namespace/staking_wallet.json
 
+
+##
+--------------------------------------------------------------------------
+##
+**To update your VPS node to testnet 2**
+
+If you have staked koii in the task first unstake all of your koii using :
+
+```
+npx @_koii/create-task-cli@latest
+```
+
+After you emptied the stake wallet, remove the VPS-task directory:
+
+```
+rm -r VPS-task/
+```
+
+Download the new VPS-task:
+
+```
+git clone https://github.com/koii-network/VPS-task
+```
+
+Now you need to change the address for the koii cli:
+
+```
+koii config set --url https://testnet.koii.network/
+```
+
+Now update your .env-local file:
+
+```
+cd VPS-task
+nano .env-local
+```
+
+Change ENVIRONMENT from development to production 
+
+```
+ENVIRONMENT="production"
+```
+
+Set initial staking wallet balance to whatever you want (keep in mind this should bigger than all staked koii in all of the tasks combined):
+
+```
+INITIAL_STAKING_WALLET_BALANCE=4
+```
+
+Change K2_NODE_URL to the new testnet URL:
+
+```
+K2_NODE_URL="https://testnet.koii.network"
+```
+
+Change taskID to the new task id, for example the free token task:
+
+```
+TASKS="GbumTdsj7hcPZKGbExTFLxQ4Cj8FeQFvH7NZWCahYows"
+```
+
+Now run the task:
+
+```
+docker-compose up -d
+```
 
 
